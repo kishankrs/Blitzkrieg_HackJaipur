@@ -9,6 +9,16 @@
     font-size: 14px;
   }
   
+  .login {
+    float: right;
+    margin-top:-40px;
+
+  }
+
+  thead input {
+    width: 100%;
+}
+
   /* Page content */
   .content {
     padding: 16px;
