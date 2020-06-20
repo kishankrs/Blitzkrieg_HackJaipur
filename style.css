@@ -1,5 +1,4 @@
 .header {
-    padding: 7px 20px;
     background:#f1f1f1;
     color:#0a0a0a;
     margin:0px;
@@ -7,11 +6,25 @@
     text-align: center;
     box-shadow: 1px 1px 10px -1px #9e9e9e;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%
+  }
+
+  .h1,h2,h3,h4,h5,h6,p,th,tr,table,tbody,td {
+    font-family:'Oxygen';
   }
   
   .login {
     float: right;
-    margin-top:-40px;
+    margin-right:20px;
+
+  }
+
+  .date {
+    float: left;
+    margin-left:20px;
 
   }
 
@@ -19,21 +32,33 @@
     width: 100%;
 }
 
+
+
   /* Page content */
   .content {
     padding: 16px;
   }
   
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%
+  .column {
+    float: left;
+    width: 33.33%;
   }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
   }
   
