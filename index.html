@@ -8,24 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      th, td {
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even){background-color: #f2f2f2}
-      
-      th {
-        background-color: #4CAF50;
-        color: white;
-      }
-      </style>
 
     <title>UCM-Dashboard</title>
 </head>
@@ -37,53 +19,53 @@
           <td><div class="date" id="myDate">
             Date:<p id="date"><script src="date.js"></script> </p>
 
-
+           
           </div></td>
+           
+          </div></td>
+          
+
           <td style="text-align:center"><h2>Unified Covid Management Dashboard</h2></td>
+
+          <td><div class="flag" id="myFlag">
+            <img src="images/Indian flag.png" height="30" width="30">
+            </div>
+          </td>
+
           <td><div class="login" id="myLogin">
             <img src="images/login.png" height="20" width="18">
             </div>
           </td>
+
+         
         </tr>
       </table>
 
    
     </div>
       
-      <script src="header.js"></script>
+      
       <br><br><br><br><br><br>
-      <section>
-        <div class="row">
-          <div class="column">
-            
-            <div class="card">
-              <img src="img_avatar.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-              </div>
-            </div>
-
-
+       <div class="row">
+        <div class="column">
+          <div class="card">
+         
+            <img src="images/farmer.svg" height="150" width="150">
           </div>
-          <div class="column">
-
-            <div class="card">
-              <img src="img_avatar.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
-              </div>
-            </div>
-
-
-
-          </div>
-          <div class="column"><h2>bye</h2></div>
         </div>
+        <div class="column">
+          <div class="card"><img src="images/hand-sanitizer.svg" height="150" width="150"></div>
+        </div>
+        <div class="column">
+          <div class="card"><img src="images/temperature-check.png" height="150" width="150"></div>
+        </div>
+        <div class="column">
+          <div class="card"><img src="images/social-distancing.svg" height="150" width="150"></div>
+        </div>
+      </div> 
 
-      </section>
-      <hr>
+      <br><br><br><br><br>
+
       <!-- State filter Dropdown Menu -->
       <select name="state" id="state" class="form-control">
         <option value="Andhra Pradesh">Andhra Pradesh</option>
