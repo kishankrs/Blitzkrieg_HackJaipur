@@ -1,44 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>UCM-Dashboard</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="table_style.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-    <title>UCM-Dashboard</title>
-    <!-- footer -->
-    <style>
-      footer {
-        text-align:left;
-        padding: 3px;
-        background:#f1f1f1;
-        color:#0a0a0a;
-        box-shadow: 1px 1px 10px -1px #9e9e9e;
-        font-size: 14px;
-        width: 100%;
-        
-        }
-      </style>
-      <!-- footer end -->
 </head>
 
 <body>
     <div class="header" id="myHeader">
       <table>
         <tr>
-          <td><div class="date" id="myDate">
-            Date:<p id="date"><script src="date.js"></script> </p>
-
-           
-          </div></td>
-           
-          </div></td>
-          
-
+          <td>
+          <div class="date" id="myDate">
+            <p id="date"><script src="date.js"></script> </p>
+          </div>
+          </td>
           <td style="text-align:center"><h2>Unified Covid Management Dashboard</h2></td>
 
           <td><div class="flag" id="myFlag">
@@ -64,24 +44,53 @@
       <div class="row">
         <div class="column">
           <div class="card">
-         
-            <img src="images/farmer.svg" height="150" width="150">
+            <h3>
+              About UCMD
+            </h3>
+            <p>
+              This dashboard is a prototype for COVID management that will help district or block level officers in keeping track of hospital performance. The performance can be tracked on multiple parameters such as the number of beds, ICUs, cases reported to a particular hospital.
+            </p>
           </div>
         </div>
         <div class="column">
-          <div class="card"><img src="images/hand-sanitizer.svg" height="150" width="150"></div>
+          <div class="card">
+            <h3>
+              Actionable Insights
+            </h3>
+            <p>
+              UCMD will help the officers understand how a particular hospital is faring when it comes to the rate of recovery from a particular area or medical facilities. It will make decision making easier for the officers on managing requests by the medical fraternity.            
+            </p>
+          </div>
         </div>
         <div class="column">
-          <div class="card"><img src="images/temperature-check.png" height="150" width="150"></div>
+          <div class="card">
+
+            <h3>
+              Mission
+            </h3>
+            <p>
+              We love finding patterns in data and any anomaly must be presented to the decision-maker immediately. It will not only help save precious lives but also ensure a stronger healthcare ecosystem.  
+            </p>
+
+          </div>
         </div>
         <div class="column">
-          <div class="card"><img src="images/social-distancing.svg" height="150" width="150"></div>
+          <div class="card">
+
+            <h3>
+              Futurescope
+            </h3>
+            <p>
+              We aim to build a robust data analysis system on top of the management dashboard. Our team has UI/UX, AI/ML and Full stack development enthusiasts. To make it easier, our future developments will have options to opt-in for alerts based on one’s custom requirement. We are looking forward to an insightful analytical and actionable dashboard.  
+            </p>
+
+          </div>
         </div>
       </div> 
 
       <!-- Card view end -->
 
-      <br><br><br><br><br>
+      <br><br>
 
       <!-- State filter Dropdown Menu -->
       <select name="state" id="state" class="form-control">
@@ -126,7 +135,7 @@
 
       <br>
       <br>
-        
+      <div>
       <table class="table-sortable">
           <thead>
             <tr>
@@ -382,17 +391,15 @@
             
           </tbody>
         </table>
+        </div>
         <script src="./src/tablesort.js"></script>
-
-
-        <!-- footer -->
-        <br><br><br>
-        <footer>
-          <p>Copyright © 2020 Concept. All rights reserved. Dashboard for UCM India
-            <br>
-          <a href="kishan.kumar22@outlook.com">ContactUs</a></p>
-        </footer>
-        <!-- footer -->
      
 </body>
+ <!-- footer -->
+ <br><br>
+ <div class="footer">
+   <p>Copyright © 2020 Concept. All rights reserved. Dashboard for UCM India</p>
+   <p><a href="kishan.kumar22@outlook.com">Built by Blitzkrieg - HackJaipur_MLH</a></p>
+   </div>
+ <!-- footer -->
 </html>
